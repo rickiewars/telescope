@@ -67,7 +67,7 @@
         <div class="row mt-4">
             <div class="col-2 sidebar">
                 <ul class="nav flex-column">
-                    @if (!(config('telescope.hide_disabled_watcher_pages', false) && !config('telescope.watchers.Laravel\Telescope\Watchers\RequestWatcher.enabled')))
+                    @if (!(config('telescope.hide_disabled_watcher_pages') && !config('telescope.watchers.Laravel\Telescope\Watchers\RequestWatcher.enabled')))
                     <li class="nav-item">
                         <router-link active-class="active" to="/requests" class="nav-link d-flex align-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -77,7 +77,7 @@
                         </router-link>
                     </li>
                     @endif
-                    @if (!(config('telescope.hide_disabled_watcher_pages', false) && !config('telescope.watchers.Laravel\Telescope\Watchers\CommandWatcher.enabled')))
+                    @if (!(config('telescope.hide_disabled_watcher_pages') && !config('telescope.watchers.Laravel\Telescope\Watchers\CommandWatcher.enabled')))
                     <li class="nav-item">
                         <router-link active-class="active" to="/commands" class="nav-link d-flex align-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -87,7 +87,7 @@
                         </router-link>
                     </li>
                     @endif
-                    @if (!(config('telescope.hide_disabled_watcher_pages', false) && !config('telescope.watchers.Laravel\Telescope\Watchers\ScheduleWatcher')))
+                    @if (!(config('telescope.hide_disabled_watcher_pages') && !config('telescope.watchers.Laravel\Telescope\Watchers\ScheduleWatcher')))
                     <li class="nav-item">
                         <router-link active-class="active" to="/schedule" class="nav-link d-flex align-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -97,7 +97,7 @@
                         </router-link>
                     </li>
                     @endif
-                    @if (!(config('telescope.hide_disabled_watcher_pages', false) && !config('telescope.watchers.Laravel\Telescope\Watchers\JobWatcher')))
+                    @if (!(config('telescope.hide_disabled_watcher_pages') && !config('telescope.watchers.Laravel\Telescope\Watchers\JobWatcher')))
                     <li class="nav-item">
                         <router-link active-class="active" to="/jobs" class="nav-link d-flex align-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -109,7 +109,7 @@
                     @endif
 
 
-                    @if (!(config('telescope.hide_disabled_watcher_pages', false) && !config('telescope.watchers.Laravel\Telescope\Watchers\BatchWatcher')))
+                    @if (!(config('telescope.hide_disabled_watcher_pages') && !config('telescope.watchers.Laravel\Telescope\Watchers\BatchWatcher')))
                     <li class="nav-item mt-3">
                         <router-link active-class="active" to="/batches" class="nav-link d-flex align-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -119,7 +119,7 @@
                         </router-link>
                     </li>
                     @endif
-                    @if (!(config('telescope.hide_disabled_watcher_pages', false) && !config('telescope.watchers.Laravel\Telescope\Watchers\CacheWatcher.enabled')))
+                    @if (!(config('telescope.hide_disabled_watcher_pages') && !config('telescope.watchers.Laravel\Telescope\Watchers\CacheWatcher.enabled')))
                     <li class="nav-item">
                         <router-link active-class="active" to="/cache" class="nav-link d-flex align-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -130,7 +130,7 @@
                         </router-link>
                     </li>
                     @endif
-                    @if (!(config('telescope.hide_disabled_watcher_pages', false) && !config('telescope.watchers.Laravel\Telescope\Watchers\DumpWatcher.enabled')))
+                    @if (!(config('telescope.hide_disabled_watcher_pages') && !config('telescope.watchers.Laravel\Telescope\Watchers\DumpWatcher.enabled')))
                     <li class="nav-item">
                         <router-link active-class="active" to="/dumps" class="nav-link d-flex align-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -140,7 +140,7 @@
                         </router-link>
                     </li>
                     @endif
-                    @if (!(config('telescope.hide_disabled_watcher_pages', false) && !config('telescope.watchers.Laravel\Telescope\Watchers\EventWatcher.enabled')))
+                    @if (!(config('telescope.hide_disabled_watcher_pages') && !config('telescope.watchers.Laravel\Telescope\Watchers\EventWatcher.enabled')))
                     <li class="nav-item">
                         <router-link active-class="active" to="/events" class="nav-link d-flex align-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -150,7 +150,7 @@
                         </router-link>
                     </li>
                     @endif
-                    @if (!(config('telescope.hide_disabled_watcher_pages', false) && !config('telescope.watchers.Laravel\Telescope\Watchers\ExceptionWatcher')))
+                    @if (!(config('telescope.hide_disabled_watcher_pages') && !config('telescope.watchers.Laravel\Telescope\Watchers\ExceptionWatcher')))
                     <li class="nav-item">
                         <router-link active-class="active" to="/exceptions" class="nav-link d-flex align-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -160,7 +160,7 @@
                         </router-link>
                     </li>
                     @endif
-                    @if (!(config('telescope.hide_disabled_watcher_pages', false) && !config('telescope.watchers.Laravel\Telescope\Watchers\GateWatcher.enabled')))
+                    @if (!(config('telescope.hide_disabled_watcher_pages') && !config('telescope.watchers.Laravel\Telescope\Watchers\GateWatcher.enabled')))
                     <li class="nav-item">
                         <router-link active-class="active" to="/gates" class="nav-link d-flex align-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -170,7 +170,7 @@
                         </router-link>
                     </li>
                     @endif
-                    @if (!(config('telescope.hide_disabled_watcher_pages', false) && !config('telescope.watchers.Laravel\Telescope\Watchers\ClientRequestWatcher')))
+                    @if (!(config('telescope.hide_disabled_watcher_pages') && !config('telescope.watchers.Laravel\Telescope\Watchers\ClientRequestWatcher')))
                     <li class="nav-item">
                         <router-link active-class="active" to="/client-requests" class="nav-link d-flex align-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -180,7 +180,7 @@
                         </router-link>
                     </li>
                     @endif
-                    @if (!(config('telescope.hide_disabled_watcher_pages', false) && !config('telescope.watchers.Laravel\Telescope\Watchers\LogWatcher.enabled')))
+                    @if (!(config('telescope.hide_disabled_watcher_pages') && !config('telescope.watchers.Laravel\Telescope\Watchers\LogWatcher.enabled')))
                     <li class="nav-item">
                         <router-link active-class="active" to="/logs" class="nav-link d-flex align-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -191,7 +191,7 @@
                         </router-link>
                     </li>
                     @endif
-                    @if (!(config('telescope.hide_disabled_watcher_pages', false) && !config('telescope.watchers.Laravel\Telescope\Watchers\MailWatcher')))
+                    @if (!(config('telescope.hide_disabled_watcher_pages') && !config('telescope.watchers.Laravel\Telescope\Watchers\MailWatcher')))
                     <li class="nav-item">
                         <router-link active-class="active" to="/mail" class="nav-link d-flex align-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -202,7 +202,7 @@
                         </router-link>
                     </li>
                     @endif
-                    @if (!(config('telescope.hide_disabled_watcher_pages', false) && !config('telescope.watchers.Laravel\Telescope\Watchers\ModelWatcher.enabled')))
+                    @if (!(config('telescope.hide_disabled_watcher_pages') && !config('telescope.watchers.Laravel\Telescope\Watchers\ModelWatcher.enabled')))
                     <li class="nav-item">
                         <router-link active-class="active" to="/models" class="nav-link d-flex align-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -212,7 +212,7 @@
                         </router-link>
                     </li>
                     @endif
-                    @if (!(config('telescope.hide_disabled_watcher_pages', false) && !config('telescope.watchers.Laravel\Telescope\Watchers\NotificationWatcher')))
+                    @if (!(config('telescope.hide_disabled_watcher_pages') && !config('telescope.watchers.Laravel\Telescope\Watchers\NotificationWatcher')))
                     <li class="nav-item">
                         <router-link active-class="active" to="/notifications" class="nav-link d-flex align-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -223,7 +223,7 @@
                         </router-link>
                     </li>
                     @endif
-                    @if (!(config('telescope.hide_disabled_watcher_pages', false) && !config('telescope.watchers.Laravel\Telescope\Watchers\QueryWatcher.enabled')))
+                    @if (!(config('telescope.hide_disabled_watcher_pages') && !config('telescope.watchers.Laravel\Telescope\Watchers\QueryWatcher.enabled')))
                     <li class="nav-item">
                         <router-link active-class="active" to="/queries" class="nav-link d-flex align-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -233,7 +233,7 @@
                         </router-link>
                     </li>
                     @endif
-                    @if (!(config('telescope.hide_disabled_watcher_pages', false) && !config('telescope.watchers.Laravel\Telescope\Watchers\RedisWatcher')))
+                    @if (!(config('telescope.hide_disabled_watcher_pages') && !config('telescope.watchers.Laravel\Telescope\Watchers\RedisWatcher')))
                     <li class="nav-item">
                         <router-link active-class="active" to="/redis" class="nav-link d-flex align-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -243,7 +243,7 @@
                         </router-link>
                     </li>
                     @endif
-                    @if (!(config('telescope.hide_disabled_watcher_pages', false) && !config('telescope.watchers.Laravel\Telescope\Watchers\ViewWatcher')))
+                    @if (!(config('telescope.hide_disabled_watcher_pages') && !config('telescope.watchers.Laravel\Telescope\Watchers\ViewWatcher')))
                     <li class="nav-item">
                         <router-link active-class="active" to="/views" class="nav-link d-flex align-items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
