@@ -121,6 +121,8 @@ return [
         //
     ],
 
+    'hide_disabled_watcher_pages' => env('TELESCOPE_HIDE_DISABLED_WATCHER_PAGES', false),
+
     /*
     |--------------------------------------------------------------------------
     | Telescope Watchers
